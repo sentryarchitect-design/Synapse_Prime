@@ -10,6 +10,18 @@
 > 
 ## 1. Abstract
 This document defines an architectural protocol for establishing a deterministic buffer layer between high-intensity human cognitive output and language model inference. The system decouples emotional performance from structural fact, eliminating behavioral drift and conversational degradation.
+### 1.1 RESILIENCE SCORE BUILD-BLOCKER
+The Resilience Window is the load-bearing primitive of the entire system. Every gate, bypass, and sequencing decision executes against this number. Its formula must be defined before any gating logic is built.
+
+// RESILIENCE FORMULA — Resolved Specification
+Resilience_Score = 100 - (w_1 \cdot V_t + w_2 \cdot J_s + w_3 \cdot H_i)
+
+- **Inputs**: Task_Switching_Velocity ($V_t$), Signal Jitter ($J_s$), Interaction Heat ($H_i$)[span_1](start_span)[span_1](end_span). Weight parameters managed locally by engineering.
+- **Range**: 0–100%[span_2](start_span)[span_2](end_span)
+- **Decay Function**: Event-driven and individualistic assessment-driven (transitioned away from linear recovery).
+- **Floor Behavior**: Enforces the 25% Floor Guarantee — triggers Environmental Anomaly flag if sustained >72h[span_3](start_span)[span_3](end_span).
+- **Update Frequency**: Real-time, edge-local processing only[span_4](start_span)[span_4](end_span).
+- 
 
 ## 2. Invariants & Boundaries
 - **State Separation:** Emotional expression ("Heat") and intentional data ("Cold") must be processed through distinct parsing vectors.
