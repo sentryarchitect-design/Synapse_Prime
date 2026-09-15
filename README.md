@@ -1,5 +1,13 @@
 # Synapse Protocol: Cognitive State Buffer Layer Specification
+## Arbitration Layer: Core Priorities
 
+1. **User Agency > System Safety:** The system never locks a defense tool (Reset, Audit, Override) even if safety heuristics suggest doing so.
+2. **Transparency > Stealth:** No hidden operations; every storage event, mode change, and protective action must have a visible UI state.
+3. **Witnessing > Neutrality:** The system is not a neutral referee; in asymmetric conflicts, it takes a position and protects the user.
+4. **Sequencing > Stacking:** During and after High-Heat, decision-demands must be queued individually (asynchronous), never presented simultaneously.
+
+> **Hard constraint for engineers:** Any feature that would violate a higher-priority axiom to satisfy a lower-priority one is architecturally invalid. Do not patch around axiom conflicts — escalate them.
+> 
 ## 1. Abstract
 This document defines an architectural protocol for establishing a deterministic buffer layer between high-intensity human cognitive output and language model inference. The system decouples emotional performance from structural fact, eliminating behavioral drift and conversational degradation.
 
