@@ -13,8 +13,7 @@ This document defines an architectural protocol for establishing a deterministic
 ### 1.1 RESILIENCE SCORE BUILD-BLOCKER
 The Resilience Window is the load-bearing primitive of the entire system. Every gate, bypass, and sequencing decision executes against this number. Its formula must be defined before any gating logic is built.
 
-// RESILIENCE FORMULA — Resolved Specification
-Resilience_Score = 100 - (w_1 \cdot V_t + w_2 \cdot J_s + w_3 \cdot H_i)
+// Resilience_Score = 100 - (w1 * V_t + w2 * J_s + w3 * H_i)
 
 - **Inputs**: Task_Switching_Velocity ($V_t$), Signal Jitter ($J_s$), Interaction Heat ($H_i$)[span_1](start_span)[span_1](end_span). Weight parameters managed locally by engineering.
 - **Range**: 0–100%[span_2](start_span)[span_2](end_span)
