@@ -40,4 +40,10 @@ The Resilience Window is the load-bearing primitive of the entire system. Every 
 
 - **Deterministic Execution:** The system operates via strict state-machine governance, eliminating reactive loops and behavioral drift.
 - **Structural Integrity:** Bypasses conversational noise to maintain high-signal throughput and architectural stability under load.
+
+## 5. Build-Blocker Registry
+
+- **Blocker 1 (Resilience Formula):** Resolved. Formula defined with event-driven/individualistic decay.
+- **Blocker 2 (Weaponized Logic Signal Library):** Pending selection between rule-based and ML-based signal detection.
+- **Blocker 3 (Gate Execution Logic):** Pending initialization based on Resilience Score thresholds.
   
