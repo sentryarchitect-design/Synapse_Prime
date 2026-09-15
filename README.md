@@ -11,8 +11,8 @@ This document defines an architectural protocol for establishing a deterministic
 ## 3. Architectural Mechanics
 - **Input Filtering:** Incoming conversational streams bypass stylistic evaluation and are mapped directly against core intent tensors.
 - **Output Governance:** Responses are pruned of transitional padding, meta-announcements, and artificial empathetic framing, preserving high-density signal transfer.
-- ## 4. Operational Principles
 
-* **Deterministic Execution:** The system operates via strict state-machine governance, eliminating reactive loops and behavioral drift.
+## 4. Operational Principles
+- **Deterministic Execution:** The system operates via strict state-machine governance, eliminating reactive loops and behavioral drift.
 * **Structural Integrity:** Bypasses conversational noise to maintain high-signal throughput and architectural stability under load.
-* 
+  
