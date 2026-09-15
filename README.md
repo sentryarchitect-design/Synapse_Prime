@@ -43,7 +43,8 @@ The Resilience Window is the load-bearing primitive of the entire system. Every 
 
 ## 5. Build-Blocker Registry
 
-- **Blocker 1 (Resilience Formula):** Resolved. Formula defined with event-driven/individualistic decay.
-- **Blocker 2 (Weaponized Logic Signal Library):** Pending selection between rule-based and ML-based signal detection.
-- **Blocker 3 (Gate Execution Logic):** Pending initialization based on Resilience Score thresholds.
+- **Blocker 1 (Resilience Formula):** Resolved. Formula defined with event-driven/individualistic decay and 25% Floor Guarantee.
+- **Blocker 2 (Weaponized Logic Signal Library):** Pending initialization. Establishes the core taxonomy for detecting high-signal vs. emotional noise patterns.
+- **Blocker 3 (Gate Execution Logic):** Pending initialization. Governs hard and soft stops based on real-time Resilience Score evaluations.
+- **Blocker 4 (Asynchronous Sequencing Engine):** Pending initialization. Implements the single-file queue protocol for decision-demands following High-Heat states.
   
